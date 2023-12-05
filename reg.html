@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация для получения книги</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fas fa-book"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page1.html">Война и мир</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="reg.html">Электранный заказ<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Электронный заказ книги</h1>
+    </div>
+
+    <div class="container mt-4">
+        <form action="reg.html?" method="get" name="user">
+            <div class="form-group">
+                <label for="firstName">Имя:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Фамилия:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="bookTitle">Название книги:</label>
+                <select class="form-control" id="bookTitle" name="bookTitle" required>
+                    <!-- Здесь будут опции с названиями книг -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Пол:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Мужской</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Женский</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date">Дата:</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+        </form>
+    </div>
+
+    <div class="push"></div>
+</div>
+<footer class="footer">
+    <p>&copy; 2023 "ЛитРесурс"</p>
+</footer>
+
+<!-- bootstrap 4 -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
